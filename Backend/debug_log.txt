@@ -1,0 +1,1 @@
+[2026-03-23T04:08:39.061Z] DEBUG: User: student@gmail.com (69b787378a6051b8300a9e95), Course: 69bcd392e9565c6a3a22e22c, Enrolled: true, Admin: false
