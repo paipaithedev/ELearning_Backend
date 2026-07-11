@@ -1,8 +1,15 @@
 {
+  "name": "e-learning-backend",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app.js",
     "seed": "node scripts/seed.js",
     "seed:wipe": "node scripts/seed.js --wipe"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
