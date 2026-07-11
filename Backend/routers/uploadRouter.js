@@ -22,7 +22,8 @@ const storage = multer.diskStorage({
             .replace(/[^a-z0-9]/gi, '-') // Replace non-alphanumeric with hyphens
             .replace(/-+/g, '-')         // Consolidate multiple hyphens
             .replace(/^-|-$/g, '');      // Trim hyphens from ends
-        cb(null, `${base}${ext}`);
+        const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
+        cb(null, `${base || 'file'}-${uniqueSuffix}${ext}`);
     }
 });
 
